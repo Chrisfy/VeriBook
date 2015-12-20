@@ -1,0 +1,29 @@
+===Database veribook
+
+== Table structure for table rooms
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|smallint(6)|No|
+|roomnum|tinytext|No|
+|klines|tinyint(4)|No|
+|extra|mediumtext|No|
+|floor|tinyint(4)|No|
+|style|tinytext|No|
+|cat|tinytext|No|
+|price|float|No|
+|m2|float|No|
+== Dumping data for table rooms
+
+== Table structure for table users
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|mediumint(9)|No|
+|username|char(16)|No|
+|password|char(16)|No|
+|ip|char(24)|No|
+== Dumping data for table users
+

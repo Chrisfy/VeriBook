@@ -1,6 +1,10 @@
 # VeriBook
-Booking Project 2015-16 ICD
+<p>Booking Project 2015-16 ICD
+<br />
 http://dimitriou.htm.gr/odigies-exetasis-programmatistikes-efarmoges-e
-sources:
+</p>
+<p>sources:
+
 http://stackoverflow.com/
 http://www.w3schools.com/php/
+</p>

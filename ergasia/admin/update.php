@@ -42,7 +42,7 @@ $roomcount=mysql_fetch_array($check);
  $checkcount=$roomcount[0];
 if($checkcount>=10)
 {
-?> <script>alert("Sorry Rooms Are not Available :( please try another Option !!");</script>
+?> <script>alert("Sorry Rooms Are not Available !!");</script>
 <?php }
 else{
 $s1="UPDATE roomdetail set username='".$username."',checkin_date='".$startdate."',checkout_date='".$enddate."',room_type='".$roomtype."',no_of_room='".$room_nos."',amount='".$amount."' where id='".$id."'";
@@ -78,7 +78,7 @@ $room=mysql_fetch_array($check1);
           <tr>
             <td>Check out Date</td>
             <td>
-              <input name="enddate1" type="date" value="<?php if(isset($_POST['enddate1'])){ echo $_POST['enddate1']; }if(isset($_GET['id'])){ echo $room['checkout_date']; }  ?> " onchange='this.form.submit()' /></td>
+              <input name="enddate1" type="date" value="<?php if(isset($_POST['enddate1'])){ echo $_POST['enddate1']; }?>" onchange='this.form.submit()' /></td>
           </tr>
 			
        </table>

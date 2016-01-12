@@ -7,7 +7,6 @@
 <body>
  
 	  <h1>welcome admin</h1>
-	  Choose option from Below to take action!!!! 
 	  Create new Booking click <a href="../registration.php"> Here</a>
 	  <?php
 	  include('../include/db_con.php');

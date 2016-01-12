@@ -68,7 +68,7 @@
 					       }
 		}
   ?>
-	<form action="registration.php" method="POST">
+	<form action="index.php" method="POST">
 	<h2 align="center" id="h"><u><i>Login Here</i></u></h2>
         <table align="center" id="t">
 		<tr> <?php  if (isset($error)) {?>

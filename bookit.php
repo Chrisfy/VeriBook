@@ -137,7 +137,11 @@ $s3=mysql_query($s2);
              <input type="text" name="roomprice" id="total1"  size="10px" readonly="" />
            </td>
           </tr>
-		  
+			<?php $paymentDate;
+				$finalDate;
+				$day1=strtotime($paymentDate);$day2=strtotime($finalDate);
+				echo floor($sum=($day2-$day1)/(60*60*24));
+			?>	  
           <tr>
             <td colspan="2" align="center">
 			<input type="submit" name="sub" value="Pay & Book" /></td>
@@ -165,7 +169,7 @@ notEmpty()
    function gettotal1(){
       var gender1=document.getElementById('a1').innerHTML;
       var gender2=document.getElementById('room_nos').value;
-      var gender3=parseFloat(gender1)* parseFloat(gender2);
+      var gender3=parseFloat(gender1)* parseFloat(gender2)*<?php echo floor($sum=($day2-$day1)/(60*60*24));?>;
 			
       document.getElementById('total1').value=gender3;
 	
